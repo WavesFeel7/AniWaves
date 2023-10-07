@@ -1,0 +1,540 @@
+.container {
+    max-width: 1442px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* Cards */
+
+.cards {
+    margin-bottom: 140px;
+}
+
+.title {
+    margin-bottom: 70px;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.title {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 70px;
+}
+
+.title span {
+    color: #FFE76B;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.card_img_block {
+    width: 420px;
+    height: 608px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    border: 2px solid #ABABAB;
+}
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.card_right {
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 55%;
+    max-width: 50%;
+    overflow: hidden;
+}
+
+.card_title {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 14px;
+    max-width: 100%;
+    /* Ограничьте максимальную ширину .card_title */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card_subtitle {
+    color: #8194AA;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.alternative_name {
+    margin-bottom: 4px;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.card_btn {
+    font-family: 'Gilroy', sans-serif;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
+    padding: 20px 34px;
+    align-items: center;
+    border-radius: 14px;
+    border: 0.67px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8.07205581665039px);
+}
+
+.card_btn:not(:last-child) {
+    margin-right: 14px;
+}
+
+.card_status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.status_text {
+    color: var(--text-2, #8194AA);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.status_text span {
+    color: var(--text-2, #ffffff);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.description {
+    max-width: 750px;
+    color: var(--text-2, #8194AA);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.description span {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button {
+    padding: 30px 34px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 0.67px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8.07205581665039px);
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Adaptive */
+
+@media(max-width: 1400px) {
+    .home-img {
+        width: 100%;
+    }
+
+    .Home-left {
+        margin-right: 100px;
+    }
+}
+
+@media(max-width: 1250px) {
+    .logo-title {
+        width: 500px;
+    }
+
+    .box {
+        width: 260px;
+        height: 370px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .card_img_block {
+        width: 380px;
+        height: 530px;
+    }
+
+    .card_title {
+        font-size: 40px;
+        margin-bottom: 14px;
+    }
+
+    .card_subtitle {
+        font-size: 20px;
+    }
+
+    .card_btn {
+        padding: 20px 34px;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .description span {
+        font-size: 20px;
+    }
+
+    .status_text {
+        font-size: 20px;
+    }
+
+    .status_text span {
+        font-size: 20px;
+    }
+
+    .Home-left {
+        margin-right: 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .header {
+        padding: 40px 0;
+    }
+
+    .Home {
+        margin-bottom: 50px;
+    }
+
+    .Home__inner {
+        padding: 70px 0;
+    }
+
+    .Home-left {
+        margin-right: 0;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    .Home-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        margin-bottom: 24px;
+    }
+
+    .card_title {
+        font-size: 32px;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .card_img_block {
+        width: 320px;
+        height: 500px;
+    }
+
+    .card_right {
+        margin-top: 24px;
+        margin-left: 40px;
+    }
+
+    .box {
+        width: 210px;
+        height: 300px;
+        margin-right: 24px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .card_title {
+        font-size: 28px;
+    }
+
+    .card_img_block {
+        width: 250px;
+        height: 350px;
+    }
+
+    .card_right {
+        margin-left: 24px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .btns {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .carousel {
+        margin-bottom: 50px;
+    }
+
+    .carousel-header {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        margin-bottom: 24px;
+    }
+
+    .Schedule {
+        font-size: 34px;
+    }
+
+    .Schedule:hover {
+        font-size: 34px;
+    }
+
+    .box {
+        width: 210px;
+        height: 300px;
+    }
+
+    .slide-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        box-sizing: border-box;
+    }
+
+    .cards {
+        margin-bottom: 70px;
+    }
+
+    .card_btn {
+        font-size: 18px;
+        border-radius: 7px;
+        padding: 14px 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .logo-title {
+        width: 420px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 100%;
+        padding: 20px 24px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        padding: 20px 24px;
+        border-radius: 10px;
+    }
+
+    .btn p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 610px) {
+    .card_title {
+        margin-bottom: 7px;
+    }
+
+    .card_subtitle {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .btns {
+        margin-bottom: 14px;
+    }
+
+    .card_btn {
+        padding: 16px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        border-radius: 14px;
+        width: 208px;
+        height: 280px;
+        margin-right: 14px;
+    }
+
+    .card_title {
+        font-size: 24px;
+    }
+
+    .card_img_block {
+        height: 320px;
+    }
+}
+
+@media (max-width: 550px) {
+    .card_img_block {
+        height: 280px;
+    }
+
+    .card_title {
+        font-size: 18px;
+    }
+
+    .card_subtitle {
+        font-size: 14px;
+    }
+
+    .status_text {
+        font-size: 14px;
+    }
+
+    .status_text span {
+        font-size: 14px;
+    }
+
+    .card_btn {
+        border-radius: 7px;
+        padding: 10px 14px;
+    }
+
+    .button {
+        padding: 20px 24px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__inner .Logo {
+        margin-bottom: 24px;
+    }
+
+    .card_img_block {
+        border-radius: 7px;
+        border: 0.61px solid #ABABAB;
+        width: 150px;
+        height: 220px;
+    }
+
+    .card_title {
+        font-size: 18px;
+        margin-bottom: 7px;
+    }
+
+    .alternative_name {
+        margin-bottom: 0;
+    }
+
+    .card_subtitle {
+        margin-bottom: 14px;
+    }
+
+    .card_btn {
+        padding: 7px 10px;
+    }
+
+    .card_right {
+        margin-left: 14px;
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .Schedule {
+        font-size: 24px;
+    }
+
+    .box {
+        width: 148px;
+        height: 220px;
+        margin-right: 7px;
+    }
+
+    .logo-title {
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+}
