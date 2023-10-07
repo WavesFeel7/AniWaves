@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Card.module.css'
-import poster from '../../assets/images/peakpx.jpg'
+// import poster from '../../assets/images/peakpx.jpg'
 
-const CardItem = ({ title, alternativeName, genre, year, episodes, status, description }) => {
+const CardItem = ({ title, alternativeName, genre, year, episodes, status, description, poster }) => {
     return (
         <div>
             <div className={styles.card}>
@@ -20,7 +20,7 @@ const CardItem = ({ title, alternativeName, genre, year, episodes, status, descr
                         <button className={styles.card_btn}>{episodes}</button>
                     </div>
                     <div className={styles.card_status}>
-                        <div className={styles.status_text}><span>Статус:</span>{status}</div>
+                        <div className={styles.status_text}><span>Статус: </span>{status}</div>
                     </div>
                     <div className={styles.description} data-max-words="40">
                         <span>Описание: </span> {description}
