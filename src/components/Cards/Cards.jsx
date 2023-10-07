@@ -1,18 +1,30 @@
-import React from 'react'
-import styles from './Card.module.css'
-// import axios from '../../axios.js'
-import CardItem from './CardItem'
-import { useDispatch, useSelector } from 'react-redux'
-import { fetchCards } from '../../redux/slices/cards'
+import React, { useState, useRef } from 'react';
+import styles from './Card.module.css';
+import CardItem from './CardItem';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCards } from '../../redux/slices/cards';
 
 const Card = () => {
     const dispatch = useDispatch();
-    React.useEffect(() => {
-        dispatch(fetchCards());
-    }, [])
+    const { cards } = useSelector((state) => state.cards);
+    const [limit, setLimit] = useState(5);
+    const scrollPositionRef = useRef(0); // Ссылка на реф для хранения позиции скролла
 
-    const { cards } = useSelector((state) => state.cards)
-    console.log(cards.items.list)
+    React.useEffect(() => {
+        // Передаем лимит и текущую позицию скролла в fetchCards
+        dispatch(fetchCards(limit, scrollPositionRef.current));
+    }, [dispatch, limit]);
+
+    const loadMoreCards = () => {
+        // Сохраняем текущую позицию скролла
+        scrollPositionRef.current = window.scrollY;
+        setLimit(limit + 10);
+    };
+
+    React.useEffect(() => {
+        // После загрузки новых карточек восстанавливаем позицию скролла
+        window.scrollTo(0, scrollPositionRef.current);
+    }, [cards]);
 
     return (
         <div>
@@ -40,14 +52,15 @@ const Card = () => {
                             );
                         })
                     ) : (
-                        <p>Loading...</p>
+                        <p className={styles.loading}>Loading...</p>
                     )}
 
 
 
-                    <button className={styles.button}>
+                    <button type="button" className={styles.button} onClick={loadMoreCards}>
                         Показать больше
                     </button>
+
 
                 </div>
             </section >

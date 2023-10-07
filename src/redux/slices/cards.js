@@ -1,10 +1,13 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "../../axios"
 
-export const fetchCards = createAsyncThunk('cards/fetchCards', async () => {
-    const { data } = await axios.get('/title/updates');
+// const limit = 5;
+
+export const fetchCards = createAsyncThunk('cards/fetchCards', async (limit) => {
+    const { data } = await axios.get(`/title/updates?limit=${limit}`);
     return data;
 })
+
 
 const initialState = {
     cards: {
