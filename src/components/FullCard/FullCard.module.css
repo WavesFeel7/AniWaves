@@ -1,0 +1,270 @@
+.container {
+    max-width: 1442px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* Card */
+
+.card {
+    position: relative;
+    z-index: 7;
+    margin-top: 140px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.card_img_block {
+    width: 350px;
+    height: 506px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 20px;
+    border: 2px solid #ABABAB;
+}
+
+.card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.card_right {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 55%;
+    max-width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.card_title {
+    display: flex;
+    margin-bottom: 4px;
+}
+
+.card_title_text {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+    max-width: 100%;
+    /* Ограничьте максимальную ширину .card-title */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.alternative_name {
+    font-size: 24px;
+    color: #8194AA;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.btns {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.card_btn {
+    font-size: 24px;
+    color: #FFF;
+    padding: 20px 34px;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 7px;
+    border: 0.67px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8.07205581665039px);
+    margin-right: 14px;
+    transition: all 0.3s;
+}
+
+.card_btn:hover {
+    border: 0.67px solid #FFE76B;
+}
+
+.Bookmarks {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 0.67px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8.07205581665039px);
+    transition: all 0.3s;
+}
+
+.Bookmarks:hover {
+    border: 0.67px solid #FFE76B;
+}
+
+.Bookmarks img {
+    width: 18px;
+}
+
+.Bookmarks p {
+    font-size: 24px;
+    color: #FFF;
+    margin-right: 14px;
+}
+
+.card_right_info {
+    color: var(--text-2, #8194AA);
+    font-size: 24px;
+}
+
+.card_right_info:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.card_right_info span {
+    color: var(--text-2, #ffffff);
+    font-weight: 700;
+    line-height: normal;
+}
+
+.description {
+    color: var(--text-2, #8194AA);
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.description span {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1170px) {
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .card {
+        margin-top: 70px;
+        margin-bottom: 24px;
+        flex-direction: column;
+    }
+
+    .card_img_block {
+        width: 260px;
+        height: 367px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+    .card_right {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .card_right_info {
+        font-size: 18px;
+    }
+
+    .card_title_text {
+        font-size: 34px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns_info {
+        margin-bottom: 14px;
+    }
+
+    .card_btn {
+        padding: 10px 24px;
+    }
+
+    .card_btn:hover {
+        border: 0.67px solid #FFE76B;
+    }
+
+    .Bookmarks {
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .Bookmarks:hover {
+        border: 0.67px solid #FFE76B;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .card_img_block {
+        width: 164px;
+        height: 237px;
+        border-radius: 7px;
+        border: 1px solid var(--text-2, #8194AA);
+    }
+
+    .card_title_text {
+        font-size: 20px;
+        -webkit-line-clamp: none;
+    }
+
+    .alternative_name {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 450px) {
+    .card_btn {
+        border-radius: 4px;
+        font-size: 18px;
+    }
+
+    .Bookmarks {
+        border-radius: 4px;
+    }
+
+    .Bookmarks p {
+        font-size: 18px;
+    }
+}

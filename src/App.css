@@ -1,7 +1,22 @@
 body {
+  height: 100%;
   background-color: #040D18;
   color: #fff;
   font-size: 24px;
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
 }
+
+/* Стили для вашего .wrapper и .main */
+.wrapper {
+  min-height: 100vh; /* Минимальная высота всего документа равна высоте видимой области (viewport height) */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1; /* Этот блок будет растягиваться, чтобы занять доступное пространство */
+}
+
+/* Другие стили */
+/* ... */

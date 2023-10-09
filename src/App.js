@@ -6,17 +6,22 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 
 import { Routes, Route } from 'react-router-dom'
+import Anime from './pages/Anime';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/anime/:id" element={} /> */}
-      </Routes>
-      <Footer />
+      <div className='wrapper'>
+        <Header />
+        <div className='main'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/anime/:id" element={<Anime />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }

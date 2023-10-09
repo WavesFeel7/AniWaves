@@ -1,0 +1,23 @@
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    box-sizing: border-box;
+    background: #040D18;
+    border-bottom: 0.7px solid var(--text-2, #8194AA);
+}
+
+@media(max-width: 1170px) {
+    .bg {
+        height: 300px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .bg {
+        height: 230px;
+        border-bottom: 0.4px solid var(--text-2, #8194AA);
+    }
+}

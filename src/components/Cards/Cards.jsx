@@ -35,7 +35,7 @@ const Card = () => {
                     {cards.items.list && cards.items.list.length > 0 ? (
                         cards.items.list.map((obj) => {
                             const fullPosterURL = `https://anilibria.tv${obj.posters.original.url}`;
-                            console.log(fullPosterURL); // Вывод полного URL-адреса изображения в консоль
+                            console.log(obj.posters.original.url)
                             return (
                                 <CardItem
                                     key={obj.id}
@@ -45,7 +45,7 @@ const Card = () => {
                                     alternativeName={obj.names.en}
                                     genre={obj.genres.join(' | ')}
                                     year={obj.season.year}
-                                    episodes={obj.type.full_string}
+                                    episodes={obj.type.episodes}
                                     status={obj.status.string}
                                     description={obj.description}
                                 />
