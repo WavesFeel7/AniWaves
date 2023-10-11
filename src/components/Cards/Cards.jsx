@@ -35,7 +35,7 @@ const Card = () => {
                     {cards.items.list && cards.items.list.length > 0 ? (
                         cards.items.list.map((obj) => {
                             const fullPosterURL = `https://anilibria.tv${obj.posters.original.url}`;
-                            console.log(obj.posters.original.url)
+                            // console.log(obj.posters.original.url)
                             return (
                                 <CardItem
                                     key={obj.id}
