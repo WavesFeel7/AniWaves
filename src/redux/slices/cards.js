@@ -31,7 +31,7 @@ const cardsSlice = createSlice({
         },
         [fetchCards.rejected]: (state) => {
             state.cards.items = []
-            state.cards.status = 'erroe'
+            state.cards.status = 'error'
         }
     }
 })

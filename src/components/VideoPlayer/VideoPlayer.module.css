@@ -1,0 +1,118 @@
+ .container {
+   max-width: 1442px;
+   padding: 0 40px;
+   margin: 0 auto;
+ }
+
+
+ video {
+   width: 100%;
+ }
+
+ .video_container {
+   position: relative;
+   width: 100%;
+ }
+
+
+ .Hamburger {
+   background-color: #030a2c;
+   position: absolute;
+   top: 40px;
+   left: 40px;
+ }
+
+ .Hamburger.active {
+   background: #17304E;
+ }
+
+.series_list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.scroll_container {
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 20px;
+  background-color: #030a2c;
+  color: #fff;
+  width: 150px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+
+.series {
+  padding: 14px 14px;
+  cursor: pointer;
+}
+
+
+
+/* .scroll_container.visible {
+  display: block;
+} */
+
+
+
+.series_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.scroll_container {
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #030a2c;
+  color: #fff;
+  width: 150px;
+  height: 400px;
+  overflow-y: scroll;
+  display: none;
+}
+
+.scroll_container.visible {
+  display: block;
+}
+
+.series_list li {
+  padding: 14px 14px;
+  cursor: pointer;
+}
+
+.series_list li:not(:last-child){
+  border-bottom: 1px solid #8194AA;
+}
+
+.series_list li.selected {
+  background: #17304E;
+}  
+
+.series_list li {
+  padding: 14px 0;
+}
+
+/* .episode {
+    width: 100px;
+    height: 40px;
+} */
+
+/* .episode {
+  padding: 14px 14px;
+  cursor: pointer;
+}
+
+.episode:not(:last-child) {
+  border-bottom: 1px solid #8194AA;
+}
+*/
