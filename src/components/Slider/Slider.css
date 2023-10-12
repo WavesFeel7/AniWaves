@@ -38,15 +38,6 @@
     background-color: var(--secondary);
 }
 
-
-/* .action-button--primary:active {
-    background-color: var(--accent-active);
-}
-
-.action-button:active {
-    background-color: var(--secondary-active);
-} */
-
 .action-button--horizontal-scroll {
     border-radius: 100%;
     margin-right: 14px;
@@ -63,7 +54,7 @@
 
 
 
- .action-button--horizontal-scroll:hover {
+.action-button--horizontal-scroll:hover {
     background-color: var(--accent-hover);
 }
 
@@ -92,25 +83,6 @@
 #action-button--next {
     transform: rotate(90deg);
 }
-
-/*
-.action-button:hover {
-    background-color: var(--secondary-hover);
-}
-
-.action-button--primary {
-    background-color: var(--accent);
-}
-
-.action-button--primary:hover {
-    background-color: var(--accent-hover);
-}
-
-
-.action-button--primary:active {
-    background-color: var(--accent-active);
-} */
-
 
 #slider {
     display: flex;
@@ -142,6 +114,22 @@
     object-fit: cover;
     box-sizing: border-box;
 }
+
+.slider_title {
+    font-size: 24px;
+    font-weight: 500;
+    width: 90%;
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+
+
+
 
 /* Adaptive */
 
@@ -367,14 +355,6 @@
         margin-bottom: 4px;
     }
 
-    /* .Schedule {
-        font-size: 34px;
-    }
-
-    .Schedule:hover {
-        font-size: 34px;
-    } */
-
     .box {
         width: 210px;
         height: 300px;
@@ -400,9 +380,18 @@
 }
 
 @media (max-width: 650px) {
-    */ .logo-title {
+    .logo-title {
         width: 420px;
     }
+
+    .slider_content {
+        margin-bottom: 14px;
+    }
+
+    .slider_title {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
 
     .subtitle {
         font-size: 24px;
@@ -501,12 +490,19 @@
 }
 
 @media (max-width: 500px) {
+    .slider_container {
+        padding: 0 30px;
+    }
+
     .slider_content {
         margin-right: 14px;
-        /* Отступ справа */
-        margin-bottom: 24px;
-        /* Отступ снизу */
+        margin-bottom: 14px;
     }
+
+    .slider_title {
+        font-size: 16px;
+        margin-bottom: 14px;
+      }
 
     .container {
         padding: 0 30px;

@@ -118,9 +118,12 @@ const Slider = ({ id }) => {
 
                 <div id="slider" onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>
                     {animeList.map((anime) => (
-                        <Link key={anime.id} to={`/anime/${anime.id}`} className="slider_content">
-                            <img className="slider_img" aria-hidden="true" src={`https://anilibria.tv${anime.posters.small.url}`} alt={anime.names.ru} />
-                        </Link>
+                        <div className='slider_inner' key={anime.id}>
+                            <Link key={anime.id} to={`/anime/${anime.id}`} className="slider_content">
+                                <img className="slider_img" aria-hidden="true" src={`https://anilibria.tv${anime.posters.small.url}`} alt={anime.names.ru} />
+                            </Link>
+                            <p className="slider_title">{anime.names.ru}</p>
+                        </div>
                     ))}
                 </div>
             </div>

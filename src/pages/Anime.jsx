@@ -48,7 +48,6 @@ const Anime = () => {
                 description={data.description}
                 in_favorites={data.in_favorites}
             />
-            {/* <ReactVideoPlayer seriesData={seriesData} /> */}
             <ReactVideoPlayer_V2 seriesData={seriesData} />
         </>
     )

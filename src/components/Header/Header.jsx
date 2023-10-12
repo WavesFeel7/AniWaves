@@ -17,11 +17,11 @@ const Header = () => {
       <header className={styles.header}>
         <div className={styles.container}>
           <div className={styles.menu}>
-            <Link className={styles.Logo} to={`/`}>
+            <Link className={styles.Logo} to={'/'}>
               <img src={Logo} alt="AniWaves" />
             </Link>
             <nav className={styles.menu_nav}>
-              <Link to={`/`} className={styles.nav__link}>Новое</Link>
+              <Link to={'/'} className={styles.nav__link}>Новое</Link>
               <Link to="#" className={styles.nav__link}>Каталог</Link>
               <Link to="#" className={styles.nav__link}>Расписание</Link>
             </nav>
@@ -32,7 +32,7 @@ const Header = () => {
             {isBurgerActive && (
               <nav className={styles.dropdown_menu}>
                 <li>
-                  <Link to={`/`} className={styles.dropdown__link}>Новое</Link>
+                  <Link to={'/'} className={styles.dropdown__link}>Новое</Link>
                 </li>
                 <li>
                   <Link to="#" className={styles.dropdown__link}>Каталог</Link>

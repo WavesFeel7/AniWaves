@@ -46,11 +46,7 @@
     right: 0rem;
     left: 0rem;
     top: 70px;
-    /* opacity: 0; */
     z-index: 100;
-    /* Начальное значение для анимации */
-    /* visibility: hidden; */
-    /* Скрываем элемент, когда opacity = 0 */
     border-radius: 17px;
     background: rgba(76, 76, 85, 0.35);
     backdrop-filter: blur(10px);
@@ -61,9 +57,7 @@
 
 .open {
     opacity: 1;
-    /* Конечное значение для анимации */
     visibility: visible;
-    /* Показываем элемент, когда opacity = 1 */
 
 }
 
@@ -85,7 +79,6 @@
     margin-bottom: 24px;
 }
 
-/* Чтобы выровнять текст внутри <li> элементов по центру */
 .dropdown_menu li {
     text-align: center;
 }
