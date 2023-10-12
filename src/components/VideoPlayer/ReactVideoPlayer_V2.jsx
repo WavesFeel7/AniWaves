@@ -12,7 +12,7 @@ const ReactVideoPlayer_V2 = ({ seriesData }) => {
     useEffect(() => {
         const initialSeries = Object.values(seriesData)[0];
         setSelectedSeries(initialSeries);
-
+    
         if (initialSeries && initialSeries.hls && initialSeries.hls.hd) {
             const videoElement = videoRef.current;
             const videoUrl = `https://cache.libria.fun${initialSeries.hls.hd}`;
@@ -28,6 +28,7 @@ const ReactVideoPlayer_V2 = ({ seriesData }) => {
             });
         }
     }, [seriesData, playing]);
+    
 
     const handleSeriesClick = (series) => {
         setSelectedSeries(series);
@@ -65,7 +66,7 @@ const ReactVideoPlayer_V2 = ({ seriesData }) => {
                 <img
                     className={`${styles.Hamburger} ${isMenuVisible ? styles.active : ''}`}
                     src={hamburger}
-                    alt=""
+                    alt="hamburger"
                     onClick={toggleMenu}
                 />
                 <div className={`${styles.scroll_container} ${isMenuVisible ? styles.visible : ''}`}>

@@ -17,8 +17,8 @@ const Footer = () => {
                             <img src={Logo} alt="AniWaves" />
                         </Link>
                         <nav className={styles.footer_nav}>
-                            <img className={styles.social} src={arrow} alt="" />
-                            <img className={styles.arrow} src={telegram} alt="" />
+                            <img className={styles.social} src={arrow} alt="social" />
+                            <img className={styles.arrow} src={telegram} alt="social" />
                         </nav>
                     </div>
                 </div>

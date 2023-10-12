@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Card.module.css'
 import { Link } from 'react-router-dom'
-// import poster from '../../assets/images/peakpx.jpg'
 
 const CardItem = ({ id, title, alternativeName, genre, year, episodes, status, description, poster }) => {
     return (
@@ -9,7 +8,7 @@ const CardItem = ({ id, title, alternativeName, genre, year, episodes, status, d
             <div className={styles.card}>
                 <div className={styles.card_img_block}>
                     <Link className={styles.poster_link} to={`/anime/${id}`}>
-                        <img className={styles.card_img} src={poster} alt="" />
+                        <img className={styles.card_img} src={poster} alt="poster" />
                     </Link>
 
                 </div>

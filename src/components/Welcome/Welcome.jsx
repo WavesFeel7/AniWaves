@@ -17,10 +17,10 @@ const Welcome = () => {
                             </Link>
                             <p className={styles.subtitle}>Смотрите аниме <span>без рекламы</span> <br /> и <span>с хорошей озвучкой</span></p>
                             <button className={styles.btn}>
-                                <p>Get Api Anilibria</p><img src={Github} />
+                                <p>Get Api Anilibria</p><img src={Github} alt='Github' />
                             </button>
                         </div>
-                        <img className={styles.home_img} src={home_img} alt="" />
+                        <img className={styles.home_img} src={home_img} alt="home_img" />
                     </div>
                 </div>
             </section>

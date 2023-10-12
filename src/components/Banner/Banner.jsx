@@ -5,7 +5,7 @@ import bannerImg from '../../assets/images/bg1920_1080_night.png'
 const Banner = () => {
     return (
         <>
-            <img className={styles.bg} src={bannerImg} alt="" />
+            <img className={styles.bg} src={bannerImg} alt="banner" />
         </>
     )
 }
