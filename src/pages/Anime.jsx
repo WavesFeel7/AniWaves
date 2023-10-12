@@ -3,7 +3,7 @@ import Banner from '../components/Banner/Banner'
 import FullCard from '../components/FullCard/FullCard'
 import { useParams } from 'react-router-dom'
 import axios from '../axios'
-import ReactVideoPlayer_V2 from '../components/VideoPlayer/ReactVideoPlayer_V2'
+import ReactVideoPlayerV2 from '../components/VideoPlayer/ReactVideoPlayer_V2'
 
 const Anime = () => {
     const [data, setData] = useState(null)
@@ -47,7 +47,7 @@ const Anime = () => {
                 description={data.description}
                 in_favorites={data.in_favorites}
             />
-            <ReactVideoPlayer_V2 seriesData={seriesData} />
+            <ReactVideoPlayerV2 seriesData={seriesData} />
         </>
     )
 }
