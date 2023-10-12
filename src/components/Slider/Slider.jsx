@@ -99,9 +99,9 @@ const Slider = ({ id }) => {
                     <div className="title">
                         Ожидается <span>сегодня</span>
                     </div>
-                    <a className="Schedule" href="#">
+                    <Link className="Schedule" to="#">
                         Расписание
-                    </a>
+                    </Link>
                 </div>
                 <div className="action-buttons">
                     <button onClick={scrollLeftButton} type="button" id="action-button--previous" className="action-button--horizontal-scroll">
