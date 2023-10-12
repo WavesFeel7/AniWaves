@@ -3,7 +3,7 @@ import './Slider.css';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchSchedule } from '../../redux/slices/schedule';
-import { format, getDay, addHours } from 'date-fns';
+import { addHours } from 'date-fns';
 
 
 const Slider = ({ id }) => {
@@ -12,7 +12,7 @@ const Slider = ({ id }) => {
 
     React.useEffect(() => {
         dispatch(fetchSchedule());
-    }, []);
+    }, [dispatch]);
 
 
     function getDayOfWeek(date) {
