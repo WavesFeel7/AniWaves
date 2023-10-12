@@ -7,7 +7,6 @@ import ReactVideoPlayer_V2 from '../components/VideoPlayer/ReactVideoPlayer_V2'
 
 const Anime = () => {
     const [data, setData] = useState(null)
-    const [series, setSeries] = useState(null)
     const [isLoading, setLoading] = useState(true);
     const { id } = useParams();
 
