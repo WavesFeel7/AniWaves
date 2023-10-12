@@ -3,7 +3,6 @@ import Banner from '../components/Banner/Banner'
 import FullCard from '../components/FullCard/FullCard'
 import { useParams } from 'react-router-dom'
 import axios from '../axios'
-import ReactVideoPlayer from '../components/VideoPlayer/ReactVideoPlayer'
 import ReactVideoPlayer_V2 from '../components/VideoPlayer/ReactVideoPlayer_V2'
 
 const Anime = () => {
@@ -32,7 +31,6 @@ const Anime = () => {
 
     const fullPosterURL = `https://anilibria.tv${data.posters.original.url}`;
     const seriesData = data.player.list;
-    // console.log(seriesData)
     console.log('Player: ', seriesData)
     return (
         <>
